@@ -138,11 +138,16 @@ h2 {
         width: 100%;
         justify-content: flex-start;
         margin-top: 10px;
-        margin-left: -10px;
+        margin-left: 0;
     }
 
     .icons-container button {
         margin-right: 15px;
+    }
+
+    .navbar .container-fluid {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
     }
 }
 
@@ -218,5 +223,3 @@ footer .btn-warning:hover {
 .fav-btn.active {
     color: #dc3545;
 }
-
-

@@ -37,7 +37,7 @@ h2 {
 .navbar .nav-link,
 .navbar .navbar-brand {
     color: white;
-    /* cambia qui il colore */
+    
 }
 
 .navbar-toggler {
@@ -61,6 +61,20 @@ h2 {
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-brand {
     color: black !important;
+}
+
+.navbar .d-flex.align-items-center.ms-3 {
+  position: relative;
+  flex: 0 0 auto;         
+  gap: 6px;
+}
+
+.navbar .d-flex.align-items-center.ms-3 .btn.position-relative {
+  padding: 6px 10px;      
+}
+
+.navbar .badge {
+  transform: translate(-35%, -35%) !important;
 }
 
 .btn-custom {
@@ -153,7 +167,7 @@ h2 {
 
 #carouselExampleIndicators {
     margin-top: -56px;
-    /* circa l’altezza della navbar */
+    
 }
 
 footer {
@@ -198,7 +212,7 @@ footer .btn-warning:hover {
 .fav-btn {
     background: none;
     border: none;
-    font-size: 2.0rem;
+    font-size: 1.6rem;
     cursor: pointer;
     color: #aaa;
     transition: transform 0.15s ease, color 0.15s ease;

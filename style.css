@@ -143,6 +143,20 @@ h2 {
     .icons-container button {
         margin-right: 15px;
     }
+
+    .navbar .d-flex.align-items-center.ms-3 {
+        position: relative;
+        flex: 0 0 auto;
+        gap: 6px;
+    }
+
+    .navbar .d-flex.align-items-center.ms-3 .btn.position-relative {
+        padding: 6px 10px;
+    }
+
+    .navbar .badge {
+        transform: translate(-35%, -35%) !important;
+    }
 }
 
 .card-title {

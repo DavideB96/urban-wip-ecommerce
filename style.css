@@ -138,6 +138,7 @@ h2 {
         width: 100%;
         justify-content: flex-start;
         margin-top: 10px;
+        margin-left: -15px;
     }
 
     .icons-container button {
@@ -217,3 +218,4 @@ footer .btn-warning:hover {
 .fav-btn.active {
     color: #dc3545;
 }
+

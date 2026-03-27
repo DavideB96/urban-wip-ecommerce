@@ -95,11 +95,3 @@ Questo progetto è stato sviluppato per dimostrare competenze in:
 ```bash
 git clone https://github.com/DavideB96/urban-wip-ecommerce.git
 cd urban-wip-ecommerce
-
----
-
-## 👨‍💻 Author
-
-Davide Bianchi
-
----

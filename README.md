@@ -1,92 +1,92 @@
 # Urban WIP — E-commerce Front-End
 
-Urban WIP è un progetto e-commerce front-end sviluppato per simulare un’esperienza di acquisto moderna, con focus su **UX, gestione dello stato lato client e interazioni dinamiche**.
+Urban WIP is a modern front-end e-commerce application built to simulate a modern shopping experience, with a strong focus on **UX, client-side state management, and dynamic interactions**.
 
 ## 🚀 Overview
 
-L'applicazione permette agli utenti di:
+The application allows users to:
 
-- esplorare prodotti in una UI responsive
-- aggiungere articoli al carrello
-- gestire una lista preferiti
-- visualizzare e modificare il carrello in tempo reale
+- browse products through a responsive UI  
+- add items to the cart  
+- manage a favorites list  
+- view and update the cart in real time  
 
-Tutti i dati vengono persistiti tramite **LocalStorage**, garantendo continuità anche dopo il refresh.
+All data is persisted using **LocalStorage**, ensuring continuity even after page refresh.
 
 ---
 
 ## 🧠 Core Features
 
-### 🛒 Carrello dinamico
-- aggiunta prodotti
-- incremento/decremento quantità
-- rimozione articoli
-- calcolo totale in tempo reale
-- persistenza dati con `localStorage`
+### 🛒 Dynamic Cart
+- add products  
+- increase/decrease quantity  
+- remove items  
+- real-time total calculation  
+- data persistence with `localStorage`  
 
-### ❤️ Sistema preferiti
-- toggle prodotti preferiti
-- stato UI sincronizzato
-- lista preferiti in offcanvas
-- persistenza lato client
+### ❤️ Favorites System
+- toggle favorite products  
+- synchronized UI state  
+- offcanvas favorites list  
+- client-side persistence  
 
-### 🎯 UI interattiva
-- toast feedback all’utente
-- navbar dinamica (scroll + hover)
-- effetti hover su card e immagini
-- offcanvas per una UX moderna
+### 🎯 Interactive UI
+- user feedback via toast notifications  
+- dynamic navbar (scroll + hover)  
+- hover effects on cards and images  
+- offcanvas components for a modern UX  
 
 ### 📱 Responsive Design
-- layout adattivo mobile-first
-- ottimizzazione immagini e componenti
-- gestione spazi e interazioni su dispositivi piccoli
+- mobile-first adaptive layout  
+- optimized images and components  
+- spacing and interaction adjustments for smaller devices  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-- **Bootstrap 5**
-- **LocalStorage API**
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (Vanilla)**  
+- **Bootstrap 5**  
+- **LocalStorage API**  
 
 ---
 
-## ⚙️ Architettura & Logica
+## ⚙️ Architecture & Logic
 
-Il progetto è costruito seguendo una logica modulare lato client:
+The project follows a modular client-side approach:
 
-- gestione stato tramite array (`cart`, `favorites`)
-- sincronizzazione UI ↔ stato
-- rendering dinamico DOM (`renderCart`, `renderFavorites`)
-- separazione logica:
-  - update UI
-  - gestione eventi
-  - persistenza dati
-
----
-
-## 🎯 Obiettivi del progetto
-
-Questo progetto è stato sviluppato per dimostrare competenze in:
-
-- DOM manipulation avanzata
-- gestione dello stato senza framework
-- progettazione UI/UX
-- sviluppo responsive
-- simulazione logiche reali di e-commerce
+- state management using arrays (`cart`, `favorites`)  
+- UI ↔ state synchronization  
+- dynamic DOM rendering (`renderCart`, `renderFavorites`)  
+- separation of concerns:
+  - UI updates  
+  - event handling  
+  - data persistence  
 
 ---
 
-## 🔮 Possibili evoluzioni
+## 🎯 Project Goals
 
-- migrazione a **React**
-- integrazione backend (Node.js / Express)
-- database (MongoDB / Firebase)
-- autenticazione utenti
-- API prodotti
-- sistema checkout reale
+This project was built to demonstrate skills in:
+
+- advanced DOM manipulation  
+- state management without frameworks  
+- UI/UX design  
+- responsive development  
+- simulation of real e-commerce logic  
+
+---
+
+## 🔮 Future Improvements
+
+- migration to **React**  
+- backend integration (Node.js / Express)  
+- database (MongoDB / Firebase)  
+- user authentication  
+- product APIs  
+- real checkout system  
 
 ---
 

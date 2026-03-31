@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <title>Urban WIP</title>
@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <!-- Navbar: menu + ricerca + accesso rapido a preferiti/carrello -->
+    <!-- Navbar: menu + search + quick access to favorites/cart -->
     <nav class="navbar sticky-top navbar-expand-sm">
         <div class="container-fluid">
-            <a href="#"><img class="Logo" src="Logo/hoodie-svgrepo-com.svg" alt="Logo Urban WIP"></a>
+            <a href="#"><img class="logo" src="Logo/hoodie-svgrepo-com.svg" alt="Urban WIP logo"></a>
             <a class="navbar-brand" href="#">&nbsp;Urban WIP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,28 +33,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Uomo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Donna</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Accessori</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Altro</a>
+                            aria-expanded="false">More</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Negozi</a></li>
-                            <li><a class="dropdown-item" href="#">Supporto</a></li>
+                            <li><a class="dropdown-item" href="#">Stores</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Accedi/registrati</a></li>
+                            <li><a class="dropdown-item" href="#">Login / Register</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca articolo" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Cerca</button>
+                    <input class="form-control me-2" type="search" placeholder="Search product" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <div class="d-flex align-items-center ms-3 gap-2 icons-container">
-                    <!-- ❤️ Preferiti -->
+                    <!-- ❤️ Favorites -->
                     <button class="btn position-relative" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#favOffcanvas" aria-controls="favOffcanvas">
                         ♥
@@ -64,7 +64,7 @@
                         </span>
                     </button>
 
-                    <!-- 🛒 Carrello -->
+                    <!-- 🛒 Cart -->
                     <button class="btn position-relative" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#cartOffcanvas">
                         🛒
@@ -77,7 +77,8 @@
             </div>
         </div>
     </nav>
-    <!-- Carosello -->
+
+    <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -125,7 +126,7 @@
             </a>
             <div class="border-top border-warning flex-grow-1 mx-3" style="height: 4px;"></div>
         </div>
-        <a href="#" class="btn btn-news fw-bold px-4 text-white">SCOPRI TUTTI GLI ARTICOLI</a>
+        <a href="#" class="btn btn-news fw-bold px-4 text-white">DISCOVER ALL PRODUCTS</a>
     </div>
 
     <!-- Cards -->
@@ -137,22 +138,22 @@
                 <div class="card p-3">
                     <a href="#"><img
                             src="https://img01.ztat.net/article/spp-media-p1/face589456f744d2acfa221206605054/ab2cc5a91a5a4dd096978a0563f4fc81.jpg?imwidth=1800"
-                            class="card-img-top" alt="Cappellino Dickies RIVERBEND UNISEX nero"></a>
+                            class="card-img-top" alt="Dickies RIVERBEND UNISEX black cap"></a>
 
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <p class="card-title mb-1">RIVERBEND UNISEX - Cappellino</p>
+                            <p class="card-title mb-1">RIVERBEND UNISEX - Cap</p>
                             <div class="price-row">
                                 <p class="product-price mb-0">€ 29,99</p>
                                 <button class="fav-btn" type="button"
-                                    onclick="toggleFavorite('RIVERBEND UNISEX - Cappellino')"
-                                    data-fav="RIVERBEND UNISEX - Cappellino">♥</button>
+                                    onclick="toggleFavorite('RIVERBEND UNISEX - Cap')"
+                                    data-fav="RIVERBEND UNISEX - Cap">♥</button>
                             </div>
                         </div>
 
                         <button class="btn-news btn btn-custom mt-auto" type="button"
-                            onclick="addToCart('RIVERBEND UNISEX - Cappellino', 29.99)">
-                            AGGIUNGI AL CARRELLO
+                            onclick="addToCart('RIVERBEND UNISEX - Cap', 29.99)">
+                            ADD TO CART
                         </button>
                     </div>
                 </div>
@@ -163,22 +164,22 @@
                 <div class="card p-3">
                     <a href="#"><img
                             src="https://img01.ztat.net/article/spp-media-p1/26f503c7432c4fdd91dcc1d326d7a345/d0d0c7c14d4e4651b7e37ea17615856d.jpg?imwidth=1800"
-                            class="card-img-top" alt="Giacca leggera HENDRY SHIRT Carhartt"></a>
+                            class="card-img-top" alt="Carhartt HENDRY SHIRT lightweight jacket"></a>
 
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <p class="card-title mb-1">HENDRY SHIRT - Giacca leggera</p>
+                            <p class="card-title mb-1">HENDRY SHIRT - Lightweight Jacket</p>
                             <div class="price-row">
                                 <p class="product-price mb-0">€ 79,99</p>
                                 <button class="fav-btn" type="button"
-                                    onclick="toggleFavorite('HENDRY SHIRT - Giacca leggera')"
-                                    data-fav="HENDRY SHIRT - Giacca leggera">♥</button>
+                                    onclick="toggleFavorite('HENDRY SHIRT - Lightweight Jacket')"
+                                    data-fav="HENDRY SHIRT - Lightweight Jacket">♥</button>
                             </div>
                         </div>
 
                         <button class="btn-news btn btn-custom mt-auto" type="button"
-                            onclick="addToCart('HENDRY SHIRT - Giacca leggera', 79.99)">
-                            AGGIUNGI AL CARRELLO
+                            onclick="addToCart('HENDRY SHIRT - Lightweight Jacket', 79.99)">
+                            ADD TO CART
                         </button>
                     </div>
                 </div>
@@ -189,22 +190,22 @@
                 <div class="card p-3">
                     <a href="#"><img
                             src="https://img01.ztat.net/article/spp-media-p1/803941031548402fa78214f441423212/e2e2a7a6e92f45389d41e3de74dc878d.jpg?imwidth=1800"
-                            class="card-img-top" alt="Felpa NEW YORK YANKEES CREW black"></a>
+                            class="card-img-top" alt="NEW YORK YANKEES CREW black sweatshirt"></a>
 
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <p class="card-title mb-1">NEW YORK YANKEES CREW - Felpa</p>
+                            <p class="card-title mb-1">NEW YORK YANKEES CREW - Sweatshirt</p>
                             <div class="price-row">
                                 <p class="product-price mb-0">€ 59,99</p>
                                 <button class="fav-btn" type="button"
-                                    onclick="toggleFavorite('NEW YORK YANKEES CREW - Felpa')"
-                                    data-fav="NEW YORK YANKEES CREW - Felpa">♥</button>
+                                    onclick="toggleFavorite('NEW YORK YANKEES CREW - Sweatshirt')"
+                                    data-fav="NEW YORK YANKEES CREW - Sweatshirt">♥</button>
                             </div>
                         </div>
 
                         <button class="btn-news btn btn-custom mt-auto" type="button"
-                            onclick="addToCart('NEW YORK YANKEES CREW - Felpa', 59.99)">
-                            AGGIUNGI AL CARRELLO
+                            onclick="addToCart('NEW YORK YANKEES CREW - Sweatshirt', 59.99)">
+                            ADD TO CART
                         </button>
                     </div>
                 </div>
@@ -215,22 +216,22 @@
                 <div class="card p-3">
                     <a href="#"><img
                             src="https://img01.ztat.net/article/spp-media-p1/cdb5846972d8495e82a6784df75aa5b8/f4af764a8a7f469f8c1e2d95f36fca95.jpg?imwidth=1800"
-                            class="card-img-top" alt="Felpa WORKATION con cappuccio"></a>
+                            class="card-img-top" alt="WORKATION hoodie"></a>
 
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <p class="card-title mb-1">WORKATION - Felpa con cappuccio</p>
+                            <p class="card-title mb-1">WORKATION - Hoodie</p>
                             <div class="price-row">
                                 <p class="product-price mb-0">€ 39,99</p>
                                 <button class="fav-btn" type="button"
-                                    onclick="toggleFavorite('WORKATION - Felpa con cappuccio')"
-                                    data-fav="WORKATION - Felpa con cappuccio">♥</button>
+                                    onclick="toggleFavorite('WORKATION - Hoodie')"
+                                    data-fav="WORKATION - Hoodie">♥</button>
                             </div>
                         </div>
 
                         <button class="btn-news btn btn-custom mt-auto" type="button"
-                            onclick="addToCart('WORKATION - Felpa con cappuccio', 39.99)">
-                            AGGIUNGI AL CARRELLO
+                            onclick="addToCart('WORKATION - Hoodie', 39.99)">
+                            ADD TO CART
                         </button>
                     </div>
                 </div>
@@ -238,6 +239,7 @@
 
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white mt-5 py-4">
         <div class="container-fluid px-4 py-2">
@@ -250,16 +252,16 @@
                 <div class="col-md-4 mb-3">
                     <h6>Links</h6>
                     <ul class="list-unstyled mt-4">
-                        <li><a href="#" class="text-white text-decoration-none">Uomo</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Donna</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Supporto</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Men</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Women</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Support</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 mb-3">
                     <h6>Newsletter</h6>
-                    <input type="email" class="form-control mb-2" placeholder="La tua Email">
-                    <button class="btn btn-warning w-100">Iscriviti alla Newsletter</button>
+                    <input type="email" class="form-control mb-2" placeholder="Your email">
+                    <button class="btn btn-warning w-100">Subscribe to the newsletter</button>
                 </div>
             </div>
 
@@ -267,40 +269,43 @@
             <p class="text-center mb-0">&copy; 2025 Urban WIP. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Offcanvas: carrello laterale (UI Bootstrap) -->
+
+    <!-- Offcanvas: side cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Il tuo carrello</h5>
+            <h5 class="offcanvas-title">Your cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
 
         <div class="offcanvas-body">
             <div id="cart-items"></div>
             <hr>
-            <p class="fw-bold">Totale: € <span id="cart-total">0.00</span></p>
+            <p class="fw-bold">Total: € <span id="cart-total">0.00</span></p>
             <button class="btn btn-news btn-custom w-100" id="checkout-btn">
-                Cassa
+                Checkout
             </button>
             <button class="btn btn-news btn-custom w-100 mt-2" id="clear-cart">
-                Svuota carrello
+                Clear cart
             </button>
         </div>
     </div>
-    <!-- Toast: feedback utente quando aggiunge un prodotto -->
+
+    <!-- Toast: user feedback when a product is added -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
         <div id="cartToast" class="toast align-items-center text-bg-dark border-0" role="alert">
             <div class="d-flex">
                 <div class="toast-body">
-                    Prodotto aggiunto al carrello ✅
+                    Product added to cart ✅
                 </div>
                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
             </div>
         </div>
     </div>
-    <!-- Offcanvas: lista preferiti -->
+
+    <!-- Offcanvas: favorites list -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="favOffcanvas">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">I tuoi preferiti</h5>
+            <h5 class="offcanvas-title">Your favorites</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
 
@@ -308,7 +313,7 @@
             <div id="fav-items"></div>
 
             <button class="btn btn-news btn-custom w-100 mt-3" id="clear-fav">
-                Svuota preferiti
+                Clear favorites
             </button>
         </div>
     </div>

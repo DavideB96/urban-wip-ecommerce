@@ -52,7 +52,7 @@ function renderFavorites() {
     if (!container) return;
 
     if (favorites.length === 0) {
-        container.innerHTML = `<p class="text-muted">Nessun preferito al momento.</p>`;
+        container.innerHTML = `<p class="text-muted">No favorites yet.</p>`;
         return;
     }
 
@@ -60,7 +60,7 @@ function renderFavorites() {
     <div class="d-flex justify-content-between align-items-center mb-2">
       <span>${name}</span>
       <button class="btn btn-sm btn-outline-danger" type="button" onclick="removeFavorite(${index})">
-        Rimuovi
+        Remove
       </button>
     </div>
   `).join("");
@@ -76,7 +76,7 @@ function removeFavorite(index) {
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Aggiunta prodotto
+// Add product
 function addToCart(name, price) {
 
     const existingProduct = cart.find(item => item.name === name);
@@ -101,12 +101,12 @@ function addToCart(name, price) {
     }
 }
 
-// Salvataggio
+// Save cart
 function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// Aggiorna badge
+// Update badge
 function updateCartCount() {
     const el = document.getElementById("cart-count");
     if (!el) return;
@@ -115,7 +115,7 @@ function updateCartCount() {
     el.textContent = totalItems;
 }
 
-// Render carrello
+// Render cart
 function renderCart() {
 
     const container = document.getElementById("cart-items");
@@ -144,10 +144,10 @@ function renderCart() {
       </div>
     </div>
 
-    <small class="d-block mt-1">Subtotale: € ${(item.price * item.quantity).toFixed(2)}</small>
+    <small class="d-block mt-1">Subtotal: € ${(item.price * item.quantity).toFixed(2)}</small>
 
     <button class="btn btn-sm btn-outline-danger mt-2" onclick="removeFromCart(${index})">
-      Rimuovi
+      Remove
     </button>
   </div>
 `;
@@ -158,7 +158,7 @@ function renderCart() {
     updateCartCount();
 }
 
-// Rimuovi prodotto
+// Remove product
 function removeFromCart(index) {
     cart.splice(index, 1);
     saveCart();
@@ -175,14 +175,14 @@ function decreaseQty(index) {
     cart[index].quantity--;
 
     if (cart[index].quantity <= 0) {
-        cart.splice(index, 1); // se scende a 0, rimuove il prodotto
+        cart.splice(index, 1);
     }
 
     saveCart();
     renderCart();
 }
 
-// Svuota carrello
+// Clear cart
 const clearCartBtn = document.getElementById("clear-cart");
 if (clearCartBtn) {
     clearCartBtn.addEventListener("click", () => {
@@ -207,15 +207,15 @@ const checkoutBtn = document.getElementById("checkout-btn");
 if (checkoutBtn) {
     checkoutBtn.addEventListener("click", () => {
         if (cart.length === 0) {
-            alert("Il carrello è vuoto.");
+            alert("Your cart is empty.");
             return;
         }
 
-        alert("Checkout simulato ✅");
+        alert("Simulated checkout ✅");
     });
 }
 
-// Inizializzazione
+// Initialization
 renderCart();
 updateFavCount();
 updateHeartsUI();
